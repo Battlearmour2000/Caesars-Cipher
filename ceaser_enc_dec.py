@@ -1,7 +1,5 @@
-from email import message
-
-
 choice=int(input(' Choose 1 to encrypt a message: \n Choose 2 to decrypt a message:'))
+#user chooses whether they want to encrypt a message or decrypt one
 
 if choice == 1:
 
@@ -21,6 +19,7 @@ if choice == 1:
 
 
     print("Encrypted message is: " ,ceasar_cipher_enc(plaintext, shift))
+    
 elif choice ==2:
 
     gibber = input('Enter message: ')
@@ -37,7 +36,6 @@ elif choice ==2:
                 text = text +chr((ord(char)- shift-97)%26+97)
         return text
 
-
-    print("Encrypted message is: " ,ceasar_cipher_dec(gibber, shift))
+    print("Dencrypted message is: " ,ceasar_cipher_dec(gibber, shift))
 else:
-    print('make a right choice dumbass')
+    print('Please make a correct choice')

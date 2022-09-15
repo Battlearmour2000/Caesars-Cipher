@@ -5,7 +5,7 @@ plaintext = input('Enter plaintext: ')
 shift = int(input("Enter shift amount: "))
 #this will hold the amount of shift
 
-def ceasar_cipher(plaintext,shift):
+def caesar_cipher(plaintext,shift):
     #created a function
     text=''
     # local var to hold each character in the loop
@@ -21,7 +21,7 @@ def ceasar_cipher(plaintext,shift):
             #encrypts lower case letters
     return text
 
-print("Encrypted message is: " ,ceasar_cipher(plaintext, shift))
+print("Encrypted message is: " ,caesar_cipher(plaintext, shift))
 #recalled function and display output
 
 

@@ -1,5 +1,6 @@
 choice=int(input(' Choose 1 to encrypt a message: \n Choose 2 to decrypt a message:'))
 #user chooses whether they want to encrypt a message or decrypt one
+#mambosasa was here
 
 if choice == 1:
 
